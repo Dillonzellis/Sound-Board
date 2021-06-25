@@ -1,0 +1,8 @@
+body {
+  background-color: black;
+}
+button {
+  border: 0;
+  padding: 1rem 3rem;
+  background-color: cadetblue;
+}
