@@ -30,36 +30,53 @@
 //   playFile("./samples/oh-no.mp3");
 // });
 
-// // Personal Solution
-// const flute = new Audio("./samples/flute.mp3");
-// const bass = new Audio("./samples/test.mp3");
+// Personal Solution
+const flute = new Audio("./samples/flute.mp3");
+const bass = new Audio("./samples/test.mp3");
+const cowboy = new Audio("/samples/cowboy-ahh.mp3");
 
-// let button = document.querySelector("#btn");
-// button.addEventListener("click", () => {
-//   bass.play();
-// });
+// <!-- <audio src="/samples/cowboy-ahh.mp3" id="cowboy"></audio>
+// <audio src="/samples/greenbacks.mp3" id="greenbacks"></audio>
+// <audio src="/samples/ice-cream.mp3" id="ice-cream"></audio>
+// <audio src="/samples/long-one.mp3" id="long-one"></audio>
+// <audio src="/samples/oh-no.mp3" id="oh-no"></audio>
+// <audio src="/samples/showdown.mp3" id="showdown"></audio>
+// <audio src="/samples/survive.mp3" id="survive"></audio>
+// <audio
+//   src="/samples/that-what-you-want.mp3"
+//   id="that-what-you-want"
+// ></audio> -->
+
+let cowboybtn = document.querySelector("#cowboy");
+cowboybtn.addEventListener("click", () => {
+  cowboy.play();
+});
+
+function stopSample() {
+  
+}
 
 // Array solution
-const sounds = [
-  "cowboy",
-  "greenbacks",
-  "ice-cream",
-  "long-one",
-  "oh-no",
-  "showdown",
-  "survive",
-  "that-what-you-want",
-];
+// const sounds = [
+//   "cowboy",
+//   "greenbacks",
+//   "ice-cream",
+//   "long-one",
+//   "oh-no",
+//   "showdown",
+//   "survive",
+//   "that-what-you-want",
+// ];
 
-sounds.forEach((sound) => {
-  const btn = document.createElement("button");
-  btn.classList.add("btn");
+// sounds.forEach((sound) => {
+//   const btn = document.createElement("button");
+//   btn.classList.add("btn");
 
-  btn.innerText = sound;
+//   btn.innerText = sound;
 
-  btn.addEventListener("click", () => {
-    document.getElementById(sound).play();
-  });
+//   btn.addEventListener("click", () => {
+//     document.getElementById(sound).play();
+//   });
 
-  document.getElementById("buttons").appendChild(btn);
-});
+//   document.getElementById("buttons").appendChild(btn);
+// });
